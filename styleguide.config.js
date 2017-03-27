@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   title: 'My Great Style Guide',
-  components: './src/js/**/*.jsx',
+  components: './src/js/components/**/*.jsx',
   updateWebpackConfig(webpackConfig) {
     webpackConfig.module.loaders.push(
       {

@@ -1,5 +1,0 @@
-You can edit this component below.
-
-```
-<App greeting="Hello World" />
-```
