@@ -1,5 +1,5 @@
 You can edit this component below.
 
 ```
-<App greeting="Hello World" />
+<Extra introduction="My name is Bob." />
 ```

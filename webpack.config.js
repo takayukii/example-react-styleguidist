@@ -20,14 +20,11 @@ module.exports = {
         query: {
           presets: ['es2015', 'react', 'react-hmre']
         }
-      }, isProd ?
+      },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader!sass-loader'})
-      } :
-      {
-        test: /\.scss$/,
-        loader: 'style-loader!css-loader!sass-loader',
+        loader: isProd ? ExtractTextPlugin.extract({fallback: 'style-loader', use: 'css-loader!sass-loader'}) :
+          'style-loader!css-loader!sass-loader',
       }
     ]
   },
