@@ -15,7 +15,7 @@ const store = configureStore({initialState});
 
 ReactDOM.render(
   <Provider store={store}>
-    <App greeting="Hello React!"/>
+    <App />
   </Provider>,
   document.getElementById('spa-root')
 );

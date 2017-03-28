@@ -1,18 +1,12 @@
-import React, {Component, PropTypes} from 'react';
+import React, {PropTypes} from 'react';
 import './Extra.scss';
 
-class Extra extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div className="introduction">
-        <p>{this.props.introduction}</p>
-      </div>
-    )
-  }
+function Extra(props = {}) {
+  return (
+    <div className="introduction">
+      <p>{props.introduction}</p>
+    </div>
+  )
 }
 
 Extra.propTypes = {
