@@ -2,7 +2,7 @@ You can edit this component below.
 
 ```
 const {Provider} = require('react-redux');
-const configureStore = require('../utils/configureStore');
+const configureStore = require('../utils/configureStore').default;
 const initialState = {
   app: {
     myName: 'Nancy',

@@ -7,7 +7,7 @@ const rootReducer = combineReducers({
 
 const isDev = true;
 
-module.exports = function configureStore ({ initialState = {} }) {
+export default function configureStore ({ initialState = {} }) {
   return createStore(rootReducer, initialState, compose(
     isDev && typeof window === 'object' && typeof window.devToolsExtension !== 'undefined' ? window.devToolsExtension() : f => f
   ));
